@@ -32,11 +32,16 @@ function renderGame() {
 
     messageEl.textContent = message
     sumEl.textContent = "Sum: " + sum
-    cardsEl.textContent = "Cards: " + cards[0]+ " " + cards[1]
+    cardsEl.textContent = "Cards: " 
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += cards[i] + " "
+    }
+
 }
 
 //New Card Function adds previous New card to Previous sum
 function newCard() {
     sum= sum + NewCard
+    cards.push(NewCard) //Updating current cards Array
     renderGame() //Calling startGame()
 }
