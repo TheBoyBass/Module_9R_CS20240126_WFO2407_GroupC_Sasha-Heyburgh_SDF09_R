@@ -1,9 +1,8 @@
 // Decelerations
-
-let firstCard = getRandom() // creating the first card variable and giving it a random value
-let secondCard = getRandom() // creating the second card variable and giving it a random value
-let cards = [firstCard, secondCard] //Creating the cards array
-let sum = firstCard + secondCard // creating the sum variable and giving the addition values of card 1 and 2
+let cards = [] //Setting empty cards array
+let sum = 0// creating the sum variable and giving the addition values of card 1 and 2
+let hasBlackJack = false
+let isAlive = false
 let message = "" // creating the message variable and giving it an empty string value
 let messageEl=document.getElementById("message-el") // Storing the message paragraph in a variable called messageEl
 let sumEl = document.getElementById("sum-el") // Storing the sum paragraph in a variable called sumEl
@@ -28,6 +27,11 @@ function getRandom() {
 }
 // Adding Start game function  
 function startGame() {
+    isAlive = true
+    let firstCard = getRandom() // creating the first card variable and giving it a random value
+    let secondCard = getRandom() // creating the second card variable and giving it a random value
+    cards = [firstCard, secondCard]
+    sum = firstCard + secondCard // adding the first and second card values to the sum variable
     renderGame()
 }
 
