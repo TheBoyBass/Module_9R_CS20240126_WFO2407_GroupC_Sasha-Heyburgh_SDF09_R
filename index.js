@@ -6,6 +6,7 @@ let sum = firstCard + secondCard
 let message = "" 
 let messageEl=document.getElementById("message-el")
 console.log(messageEl)
+let sumEl = document.getElementById("sum-el")
 
 // MainCode
 
@@ -21,4 +22,5 @@ function startGame() {
     }       
 
     messageEl.textContent = message
+    sumEl.textContent = "Sum: " + sum
 }
