@@ -27,3 +27,7 @@ function startGame() {
     sumEl.textContent = "Sum: " + sum
     cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
 }
+
+function newCard() {
+    
+}
