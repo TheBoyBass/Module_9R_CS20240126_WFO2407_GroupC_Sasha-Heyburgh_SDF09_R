@@ -11,8 +11,13 @@ let NewCard = 6
 
 // MainCode
 
-// Adding start game function   
+// Adding Start game function  
 function startGame() {
+    renderGame()
+}
+
+// Adding render game function   
+function renderGame() {
 //settingup winning and losing conditions of the game
     if (sum <= 20) {
         message = "You do not have Blackjack. You need to draw another card"
@@ -32,5 +37,5 @@ function startGame() {
 //New Card Function adds previous New card to Previous sum
 function newCard() {
     sum= sum + NewCard
-    startGame() //Calling startGame()
+    renderGame() //Calling startGame()
 }
