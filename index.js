@@ -1,20 +1,23 @@
 // Decelerations
 
-let firstCard = 6
+let firstCard = 12
 let secondCard = 9
 let sum = firstCard + secondCard
-
+let message = ""
 
 // MainCode
-console.log(sum) //sum output
+console.log("The sum of your cards is" ,sum) //sum output
 
 //settingup winning and losing conditions of the game
 if (sum <= 20) {
-    console.log("You do not have Blackjack. You need to draw another card")
+    message = "You do not have Blackjack. You need to draw another card"
     } else if (sum === 21) {
-        console.log("You have Blackjack! Congratulations!")
+        message = "You have Blackjack! Congratulations!"
         } else {
-            console.log("You bust! Game over!")
+            message = "You bust! Game over!"
             }
+            
+
+console.log(message) //message output
 
 
