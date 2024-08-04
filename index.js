@@ -1,9 +1,11 @@
 // Decelerations
 
 let firstCard = 12
-let secondCard = 9
+let secondCard = 10
 let sum = firstCard + secondCard
-let message = ""
+let message = "" 
+let messageEl=document.getElementById("message-el")
+console.log(messageEl)
 
 // MainCode
 
@@ -16,9 +18,7 @@ function startGame() {
         message = "You have Blackjack! Congratulations!"
     } else {
         message = "You bust! Game over!"
-    }
-            
+    }       
 
-    console.log("The sum of your cards is" ,sum) //sum output
-    console.log(message) //message output}
+    messageEl.textContent = message
 }
