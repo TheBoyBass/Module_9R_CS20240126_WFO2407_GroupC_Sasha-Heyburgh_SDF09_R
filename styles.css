@@ -3,6 +3,8 @@ body {
     background-image: url("images/Casino\ Image\ Unsplash.jpg");
     align-content: center;
     text-align: center;
+    font-weight:900;
+    color: azure;
 
 }
 
@@ -12,12 +14,9 @@ h1 {
     font-size: 100px;
 }
 
-p {
-    font-weight:900;
-    color: azure;
-}
 
 #message-el {
     font-size: 20px;
+    font-style: italic;
 
 }
