@@ -1,11 +1,20 @@
-// 1. Create two variables, firstCard and secondCard. 
-// Set their values to a random number between 2-11
-
-// 2. Create a variable, sum, and set it to the sum of the two cards
+// Decelerations
 
 let firstCard = 6
 let secondCard = 9
-
 let sum = firstCard + secondCard
 
-console.log(sum)
+
+// MainCode
+console.log(sum) //sum output
+
+//settingup winning and losing conditions of the game
+if (sum <= 20) {
+    console.log("You do not have Blackjack. You need to draw another card")
+    } else if (sum === 21) {
+        console.log("You have Blackjack! Congratulations!")
+        } else {
+            console.log("You bust! Game over!")
+            }
+
+
