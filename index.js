@@ -6,6 +6,7 @@ let sum = firstCard + secondCard // creating the sum variable and giving the add
 let message = "" // creating the message variable and giving it an empty string value
 let messageEl=document.getElementById("message-el") // Storing the message paragraph in a variable called messageEl
 let sumEl = document.getElementById("sum-el") // Storing the sum paragraph in a variable called sumEl
+let cardsEl = document.getElementById("card-el") // Storing the card paragraph in a variable called cardsEl
 
 // MainCode
 
@@ -20,6 +21,9 @@ function startGame() {
         message = "You bust! Game over!"
     }       
 
+    // Game status messages printed out on screen
+
     messageEl.textContent = message
     sumEl.textContent = "Sum: " + sum
+    cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
 }
