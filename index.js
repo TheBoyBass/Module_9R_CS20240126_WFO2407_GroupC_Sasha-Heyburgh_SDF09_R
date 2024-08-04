@@ -2,6 +2,7 @@
 
 let firstCard = 10 // creating the first card variable and giving it a random value
 let secondCard = 5 // creating the second card variable and giving it a random value
+let cards = [firstCard, secondCard] //Creating the cards array
 let sum = firstCard + secondCard // creating the sum variable and giving the addition values of card 1 and 2
 let message = "" // creating the message variable and giving it an empty string value
 let messageEl=document.getElementById("message-el") // Storing the message paragraph in a variable called messageEl
@@ -31,7 +32,7 @@ function renderGame() {
 
     messageEl.textContent = message
     sumEl.textContent = "Sum: " + sum
-    cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
+    cardsEl.textContent = "Cards: " + cards[0]+ " " + cards[1]
 }
 
 //New Card Function adds previous New card to Previous sum
