@@ -7,6 +7,7 @@ let message = "" // creating the message variable and giving it an empty string 
 let messageEl=document.getElementById("message-el") // Storing the message paragraph in a variable called messageEl
 let sumEl = document.getElementById("sum-el") // Storing the sum paragraph in a variable called sumEl
 let cardsEl = document.getElementById("card-el") // Storing the card paragraph in a variable called cardsEl
+let playerEl = document.getElementById("player-el")
 
 //object carrying player details
 let player = {
@@ -16,8 +17,8 @@ let player = {
 
 // MainCode
 
-let playerEl = document.getElementById("player-el")
-playerEl.textContent = player.Name + ": $" + player.Chips // Displaying the player name
+// Displaying the player name
+playerEl.textContent = player.Name + ": $" + player.Chips 
 
 // function to get random number between from 1 to 13
 function getRandom() {
