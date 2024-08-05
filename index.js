@@ -7,11 +7,10 @@ let message = "" // creating the message variable and giving it an empty string 
 let messageEl=document.getElementById("message-el") // Storing the message paragraph in a variable called messageEl
 let sumEl = document.getElementById("sum-el") // Storing the sum paragraph in a variable called sumEl
 let cardsEl = document.getElementById("card-el") // Storing the card paragraph in a variable called cardsEl
-let NewCard = getRandom()
 
 // MainCode
 
-// function to get random number between from to 11
+// function to get random number between from 1 to 13
 function getRandom() {
     let randomNumber = Math.floor( Math.random()*13 ) + 1
     if (randomNumber > 10) {
@@ -61,7 +60,11 @@ function renderGame() {
 
 //New Card Function adds previous New card to Previous sum
 function newCard() {
-    sum= sum + NewCard
-    cards.push(NewCard) //Updating current cards Array
-    renderGame() //Calling startGame()
+    if (isAlive === true && hasBlackJack === false) {
+        let NewCard = getRandom()
+        sum += NewCard
+        cards.push(NewCard) //Updating current cards Array
+        renderGame() //Calling startGame()
+
+    }
 }
