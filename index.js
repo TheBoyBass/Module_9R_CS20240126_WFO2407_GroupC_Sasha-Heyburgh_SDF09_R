@@ -51,8 +51,15 @@ function renderGame() {
         message = "You do not have Blackjack. You need to draw another card"
     } else if (sum === 21) {
         message = "You have Blackjack! Congratulations!"
+        hasBlackJack = true // Update hasBlackJack to true
+        player.Chips += 10 // Add $10 to player's chips
+        playerEl.textContent = player.Name + ": $" + player.Chips 
     } else {
         message = "You bust! Game over!"
+        isAlive = false // Update is alive to to false
+        player.Chips -= 20 // Subtract $20 from player's chips
+        playerEl.textContent = player.Name + ": $" + player.Chips 
+
     }       
 
     // Game status messages printed out on screen
