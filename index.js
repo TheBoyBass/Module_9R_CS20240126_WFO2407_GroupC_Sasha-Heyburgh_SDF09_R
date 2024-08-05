@@ -37,6 +37,7 @@ function getRandom() {
 // Adding Start game function  
 function startGame() {
     isAlive = true
+    hasBlackJack = false
     let firstCard = getRandom() // creating the first card variable and giving it a random value
     let secondCard = getRandom() // creating the second card variable and giving it a random value
     cards = [firstCard, secondCard]
